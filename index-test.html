@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="https://fonts.googleapis.com/css?family=Barlow:300i,400" rel="stylesheet"> 
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<style type="text/css">
+		div{
+			
+
+		}
+		block-quote{
+			font-size: 1.625rem;
+			line-height: 1.6em;
+			font-family: 'Barlow', sans-serif;
+			border: none;
+			quotes: "\201C""\201D""\2018""\2019";
+    		font-style: italic;
+    		margin:0;
+    		padding: 40px;
+    		position: relative;
+    		display: block;
+
+		}
+		block-quote:before {
+    	
+    	content: open-quote;
+    	font-weight: bold;
+    	font-size: 100px;
+    	color:#008000;
+    	top:20px;
+    	left: 0px;
+    	position: absolute;
+    	}
+    	/*blockquote:before, blockquote:after {
+    	font-size: 60px;
+    	font-size: 3.75rem;
+    	position: absolute;
+    	color: #ccc;
+    	font-family: 'serif';
+    	}*/
+    	block-quote:after {
+    	
+    	content: close-quote;
+    	font-weight: bold;
+    	font-size: 100px;
+    	color:#008000;
+    	bottom: 10px;
+    	right: 35px;
+    	
+    	position: absolute;
+    	
+		}
+		.title{
+			text-align: center;
+		}
+		.title h2 span{
+			color:#008000;
+		}
+	</style>
+</head>
+<body>
+
+
+
+
+<div class="container title">
+		<h2><span>Moving</span> Spot</h2>
+	
+</div>
+
+
+<div class="container">
+<block-quote>
+	<h3>Pellentesque a lorem vitae odio suscipit bibendum ac at elit. Maecenas mollis id nulla vitae venenatis. Cras hendrerit, nisi vitae hendrerit iaculis, orci leo congue leo, sed vestibulum justo tellus non elit. Fusce nec scelerisque magna. Nulla pulvinar, velit non hendrerit finibus, turpis metus feugiat ligula, ac porta neque ante a purus.</h3>
+</block-quote>
+</div>
+
+</body>
+</html>
