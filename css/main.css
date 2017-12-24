@@ -170,25 +170,27 @@ input[type="search"]{
 
 #button-group{
 	margin-top:20px;
-	margin-right: 700px;
+	margin-left: 17%;
 }
 #button-group button{
 	padding-right: 10px;
-	padding-left: 0px;
+	padding-left: 5px;
 	padding-bottom: 3px;
 	padding-top: 3px;
 	border:0;
 	background-color: #fff;
+	position: relative;
+	float: left;
 }
 #button-group button:first-of-type{
-	margin-right: 3%;
+	margin-right: 20px;
 	padding-left: 8px;
 }
 #button-group button:last-of-type{
 	background-color: #AEAEB2;
 }
 #reviews-in-depth{
-	margin-left: 248px;
+	margin-left: 17%;
 	background-color: #fff;
 	height:630px;
 	position: relative;
