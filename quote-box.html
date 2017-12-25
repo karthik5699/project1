@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quote-box</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<style type="text/css">
+		.quote-box{
+			text-align: center;
+			left: 0;
+			right: 0;
+			margin:auto;
+		}
+
+
+
+		.quote-box div button{
+			max-width: 100%;
+			position: relative;
+			display: block;
+			left: 0;
+			right: 0;
+			margin:auto;
+			width:400px;
+			height: 50px;
+			margin-bottom: 15px;
+			background-color:#008000;
+			color:#fff;
+			border-radius: 6px;
+
+		}
+		.quote-box div button span{
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 1.4em;
+		}
+		#quote-2, #quote-3,#quote-4,#quote-5{
+			display: none;
+		}
+
+
+		
+
+		.price-form{
+			width: 100%;
+			border-bottom: 1px solid #ccc;
+			padding: 0;
+			left: 0;
+			right: 0;
+			margin:auto;
+			height:50px;
+			width:400px;
+			text-align: left;
+			border:1px solid #ccc;
+		}
+
+		.price-form label{
+			margin-left: 5px;
+			margin-top: 8px;
+			float: left;
+    		font-size: 16px;
+    		display: inline-block;
+    		max-width: 100%;
+    		white-space: nowrap;
+    		margin-right: 5px;
+    		text-decoration: none;
+		}
+
+		.price-form span {
+			display: block;
+			overflow:hidden;
+		}
+
+		.price-form span input{
+			border:0;
+			
+			display: inline-block;
+			 width: 100%;
+    		padding-bottom: 15px;
+    		padding-top: 10px;
+    		text-indent: 5px;
+    		
+		}
+
+		.price-form span input:focus{
+			background-color: #FBF5FD;
+			outline: 0;
+		}
+
+		
+	</style>
+</head>
+<body>
+	<div class="quote-box col-lg-6 col-sm 8 col-xs-12 clearfix">
+		<h3>What type of quote do you need?</h3>
+		<p id="quote-p">Choosing a Move Step 1</p>
+		<div id="quote-1">
+			<button type="button" class="btn"><span>Home</span></button>
+			<button type="button" class="btn"><span>Apartment</span></button>
+			<button type="button" class="btn"><span>Office</span></button>
+			<button type="button" class="btn"><span>Other</span></button>
+
+		</div>
+		<div id="quote-2">
+			<button type="button" class="btn"><span>Home2</span></button>
+			<button type="button" class="btn"><span>Apartment2</span></button>
+			<button type="button" class="btn"><span>Office2</span></button>
+			<button type="button" class="btn"><span>Other2</span></button>
+
+		</div>
+		<div id="quote-3">
+			<button type="button" class="btn"><span>Home3</span></button>
+			<button type="button" class="btn"><span>Apartment3</span></button>
+			<button type="button" class="btn"><span>Office3</span></button>
+			<button type="button" class="btn"><span>Other3</span></button>
+
+		</div>
+		<div id="quote-4">
+			<button type="button" class="btn"><span>Home4</span></button>
+			<button type="button" class="btn"><span>Apartment4</span></button>
+			<button type="button" class="btn"><span>Office4</span></button>
+			<button type="button" class="btn"><span>Other4</span></button>
+
+		</div>
+		<div id="quote-5">
+			<div class="price-form">
+				<label for="quote-name">Name</label>
+				<span>
+					<input id="quote-name" type="text" autofocus="autofocus" required="required" name="Name">
+				</span>
+			</div>
+			<div class="price-form">
+				<label for="quote-number">Phone Number</label>
+				<span>
+					<input id="quote-number" type="text" required="required" name="Phone Number">
+				</span>
+			</div>
+			<div class="price-form">
+				<label for="quote-email">Email</label>
+				<span>		
+					<input id="quote-email" type="text" required="required" name="Email">
+				</span>	
+			</div>
+			<button type="button" class="btn"><span>SUBMIT</span></button>
+
+		</div>
+	</div>
+
+
+	<script type="text/javascript">
+		var quote_1=$('#quote-1 button');
+ 		var quote_2=$('#quote-2 button');
+		var quote_3=$('#quote-3 button');
+		var quote_4=$('#quote-4 button');
+		var quote_5=$('#quote-5 button');
+		var quote_p=$('#quote-p');
+
+		quote_1.click(function(){
+			$('#quote-1').css('display','none');
+			$('#quote-2').css('display','block');
+			quote_p.text("Choosing a Move Step 2");
+		});
+		quote_2.click(function(){
+			$('#quote-2').css('display','none');
+			$('#quote-3').css('display','block');
+			quote_p.text("Choosing a Move Step 3");
+		});
+		quote_3.click(function(){
+			$('#quote-3').css('display','none');
+			$('#quote-4').css('display','block');
+			quote_p.text("Choosing a Move Step 4");
+		});
+		quote_4.click(function(){
+			$('#quote-4').css('display','none');
+			$('#quote-5').css('display','block');
+			quote_p.text("Choosing a Move Step 5");
+		});
+		quote_5.click(function(){
+			$('#quote-5').css('display','none');
+			quote_p.text("Completed");
+
+		});
+
+		
+
+
+
+
+	</script>
+
+</body>
+</html>
