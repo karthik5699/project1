@@ -998,6 +998,9 @@ input[type="search"]{
 	#advertisement{
 		height: 500px;
 	}
+	.menu-box{
+		width:50%;
+	}
 }
 
 
@@ -1006,9 +1009,7 @@ input[type="search"]{
 		margin-left: 6%;
 		margin-right: 2%;
 	}
-	.menu-box{
-		width:40%;
-	}
+	
 }
 
 @media screen and (max-width: 475px){
