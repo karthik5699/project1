@@ -572,21 +572,21 @@ input[type="search"]{
 
 }
 
-#adv-text{
+#adv-text-1{
 	margin-left: 50%;
 	margin-top: -180px;
 	overflow:hidden;
 }
-#adv-text p{
+#adv-text-1 p{
 	overflow:hidden;
 	margin-top: 15px;
 	text-align: left;
 }
-#adv-text h3{
+#adv-text-1 h3{
 	text-transform: capitalize;
 	overflow:hidden;
 }
-#adv-text button{
+#adv-text-1 button{
 	background-color:#008000;
 	
 	color:#fff;
@@ -595,7 +595,7 @@ input[type="search"]{
 	font-size: 14px;
 	border-radius: 2.2px;
 }
-#adv-text button span{
+#adv-text-1 button span{
 	padding-right: 5px;
 }
 
@@ -699,7 +699,7 @@ input[type="search"]{
 	color:#fff;
 	margin-top: 50px;
 	overflow: hidden;
-	
+
 }
 .follow input{
 	min-width: 140px;
@@ -970,7 +970,7 @@ input[type="search"]{
 		margin-left: 20%;
 		margin-right: 3%;
 	}
-	#adv-text{
+	#adv-text-1{
 	margin-left: 10%;
 	margin-top: 20px;
 	overflow:hidden;
@@ -986,7 +986,7 @@ input[type="search"]{
 	}
 }
 @media screen and (max-width: 575px){
-	#adv-text{
+	#adv-text-1{
 	margin-left: 2%;
 	margin-top: 50px;
 	overflow:hidden;
@@ -995,7 +995,7 @@ input[type="search"]{
 	.about{
 		margin-top: 270px;
 	}
-	#adv-text button{
+	#adv-text-1 button{
 		left:0;
 		right:0;
 		margin:auto;
