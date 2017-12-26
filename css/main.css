@@ -863,6 +863,9 @@ input[type="search"]{
           flex: 0 0 11.886667%;
   	max-width: 25.866667%;
 	}
+	.subarea-text{
+		display: none;
+	}
 
 	.build-img{
 		margin-left: 40px;
@@ -877,6 +880,7 @@ input[type="search"]{
 	#adv-img img{
 	left:10%;
 	}
+
 }
 
 @media screen and (max-width: 870px){
